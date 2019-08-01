@@ -1,5 +1,6 @@
 class Dog
-  def initialize(name, breed)
+  attr_reader :breed
+  def initialize(name)
     @name = name
   end
   
@@ -11,3 +12,6 @@ class Dog
     @name
   end
 end
+
+fido = Dog.new
+fido.breed = "Pug"
